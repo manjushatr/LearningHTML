@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Three Column Layout</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+        }
+        #left, #right {
+            width: 20%;
+            height: 100;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+        }
+        #left {
+            background-color: red;
+            left: 0;
+        }
+        #center {
+            align-items: center;
+            background-color: green;
+            width: 60%;
+            margin-left: 20%;
+            margin-right: 20%;
+            overflow-y: auto; /* Make the center div scrollable */
+        }
+        #right {
+            background-color: blue;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="left">
+        <p>DIV1 #left<br>static and<br>fit to<br>screen height</p>
+    </div>
+    <div id="center">
+        <center>
+        <p>DIV2 #center<br>scrollable to fit the content</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce nec fringilla quam. Integer nec pharetra urna. Proin ut libero id mi fermentum bibendum. Integer nec tristique justo. Pellentesque vehicula nibh velit, at pretium elit vehicula vel. Suspendisse potenti. Quisque ut ligula metus. Nullam vitae ante eros. Vestibulum vehicula elit in leo consequat condimentum. Sed et dapibus ligula. Nam laoreet varius arcu, non luctus orci ultrices id. Curabitur nec nulla vitae elit sollicitudin fringilla non sed ligula. Cras gravida, risus sit amet condimentum dignissim, libero odio ullamcorper libero, nec convallis metus risus nec justo. Nulla eu quam eget justo tincidunt vulputate ac eget nulla. Ut nec ipsum sed eros cursus bibendum vel nec orci. Duis euismod dapibus ante sit amet sollicitudin.</p></center>
+    </div>
+    <div id="right">
+        <p>DIV3 #right<br>static and<br>fit to<br>screen height</p>
+    </div>
+</body>
+</html>
